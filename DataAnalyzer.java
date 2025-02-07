@@ -1,4 +1,14 @@
+import java.util.Scanner;
+
 public class DataAnalyzer {
+    public static int[] reverseList(int[] numbers) {
+        for(int i = 0; i < numbers.length / 2; i++) {
+            int temp = numbers[i];
+            numbers[i] = numbers[numbers.length - 1 - i];
+            temp = numbers[numbers.length - 1 - i];
+        }
+        return numbers;
+    }
     //binary
     public static int searchList(int target, int[] numbers) {
         int minIndex = 0;
@@ -33,9 +43,17 @@ public class DataAnalyzer {
     }
 
     public static void main(String[] args) {
-        int[] r = {10, 20, 30, 40, 50};
-        System.out.println(searchList(50, r));
-
-        System.out.println(searchList(r, 50));
+        int[] arr = new int[100];
+        try {
+            File f = new File("./numbers.txt");
+            Scanner input = new Scanner(f);
+            for(int i = 0; i < 100; i++) {
+                arr[i] = input.nextInt();
+            }
+        } catch (IOException e) {
+            System.out.println("file not found");
+            return;
+        }
+        System.out.println(searchList(arr, 1))
     }
 }
