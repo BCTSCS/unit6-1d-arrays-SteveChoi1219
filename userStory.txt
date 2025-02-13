@@ -1,0 +1,22 @@
+User Story B: As a manager of a technology non-profit organization, I want to find the areas that have low internet access so I can focus my team's efforts.
+
+Possible Extensions: I would like to consider multiple datasets.
+
+✅ TO DO: Use your knowledge of object-oriented programming, one-dimensional (1D) arrays, and algorithms to create your data analysis program:
+
+Write a class - Write a class to represent your user or business and store and analyze their data with no-argument and parameterized constructors.
+
+Create at least two 1D arrays - Create at least two 1D arrays to store the data that your user needs information about.
+
+Write a method - Write a method that finds or manipulates the elements in a 1D array to provide the information your user needs.
+
+Implement a toString() method - Write a toString() method that returns general information about the data (for example, number of values in the dataset).
+
+Document your code - Use comments to explain the purpose of the methods and code segments and note any preconditions and postconditions.
+
+FileReader Methods
+toStringArray(String filename) - reads the data from the specified filename and returns a 1D array of String objects containing the data
+
+toIntArray(String filename) - reads the data from the specified filename and returns a 1D array of int values containing the data
+
+toDoubleArray(String filename) - reads the data from the specified filename and returns a 1D array of double values containing the data

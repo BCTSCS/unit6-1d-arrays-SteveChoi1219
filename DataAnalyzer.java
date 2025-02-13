@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class DataAnalyzer {
     public static int[] reverseList(int[] numbers) {
@@ -43,17 +42,17 @@ public class DataAnalyzer {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[100];
-        try {
-            File f = new File("./numbers.txt");
-            Scanner input = new Scanner(f);
-            for(int i = 0; i < 100; i++) {
-                arr[i] = input.nextInt();
-            }
-        } catch (IOException e) {
-            System.out.println("file not found");
-            return;
-        }
-        System.out.println(searchList(arr, 1))
+        // int[] arr = new int[100];
+        // try {
+        //     File f = new File("./numbers.txt");
+        //     Scanner input = new Scanner(f);
+        //     for(int i = 0; i < 100; i++) {
+        //         arr[i] = input.nextInt();
+        //     }
+        // } catch (IOException e) {
+        //     System.out.println("file not found");
+        //     return;
+        // }
+        // System.out.println(searchList(arr, 1));
     }
 }
