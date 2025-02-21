@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
 
 public class fileOperator {
     private Scanner fileReader;
@@ -26,18 +27,32 @@ public class fileOperator {
 
     public String[] toStringArray(int size) {
         String[] arr = new String[size];
-        for(int i = 0; i < size; i++) {
-            arr[i] = fileReader.next();
+        try {
+            for(int i = 0; i < size; i++) {
+                arr[i] = fileReader.nextLine();
+            }
+        } catch (IOException e) {
+            System.out.println("file");
+            return arr;
         }
         return arr;
     }
 
     public double[] toDoubleArray(int size) {
         double[] arr = new double[size];
-        for(int i = 0; i < size; i++) {
-            arr[i] = fileReader.nextDouble();
+        try {
+            for(int i = 0; i < size; i++) {
+                arr[i] = fileReader.nextDouble();
+            }
+            return arr;
+        } catch (Exception e) {
+            System.out.println("Error");
+            return arr;
         }
-        return arr;
+    }
+
+    public static void main(String[] args) {
+        
     }
 
 }
