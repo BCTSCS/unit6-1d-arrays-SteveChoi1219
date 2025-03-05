@@ -1,3 +1,8 @@
+// Most Common Income Level  
+// Least Populated Countries
+// Get Low Usage Countries 
+// Statistical Percentage of Each Income Level 
+
 public class DataAnalyzer{
 
     public static String findCountryByInternetUsage(double internet, double[] internetList, String[] countryList){
